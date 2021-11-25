@@ -236,11 +236,6 @@ button:hover {
     margin: 10px 0 20px 0;
   }
   
-  .inf_nosotros{
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-  }
 
   .inf_nosotros h1{
     text-align: center;
@@ -249,12 +244,63 @@ button:hover {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .cont_nosotros img{
-    width: 500px;
+
+  /*Slider*/
+  .slider{
     display: block;
     margin: auto;
-    padding-bottom: 30px;
   }
+  .slider ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  ul.slider {
+    position: relative;
+    width: 800px;
+    height: 500px;
+  }
+  ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+  }
+  ul.menu li a{
+    color: none;
+  }
+  ul.slider li img{
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 150px;
+  }
+  ul.slider li:first-child{
+    opacity: 1;
+  }
+  ul.slider li:target{
+    opacity: 1;
+  }
+
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  .menu li a{
+    display: inline-block;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: #000000;
+  }
+
 
   /* CARDS BANNER TWO*/
   .cards-banner-two {
@@ -396,6 +442,7 @@ button:hover {
   }
   
   @media screen and (max-width: 1000px){
+
     .cards-banner-two{
       width: auto;
       height: auto;
@@ -422,6 +469,16 @@ button:hover {
     .inf_footer .links_f1 img{
       width: 82px;
       height: 42px;
+    }
+    
+  }
+  @media screen and (max-width:700px){
+    .slider{
+      margin-left: -150px;
+    }
+    ul.slider li img{
+      width: 400px;
+      height: 100%;
     }
   }
  

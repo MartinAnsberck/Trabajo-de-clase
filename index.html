@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechNews</title>
+  <title>Delta Fitness</title>
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
@@ -21,9 +21,9 @@
     <img class="logo" src="./img/logo1.png" alt="Logo">
     <nav>
       <ul class="nav_links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Programas</a></li>
-        <li><a href="#">Nosotros</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#inf_nosotros_header">Nosotros</a></li>
       </ul>
     </nav>
   </header>
@@ -35,21 +35,20 @@
           <a href="https://goo.gl/maps/8BXA2KuFBFwqRyeVA" class="icon-location" target="blank"></a>  
           <a href="https://www.instagram.com/deltafitnessclubok/" class="icon-instagram" target="blank"></a>
             <a href="https://api.whatsapp.com/send?phone=+5492995016050&text=Hola,%20queria%20saber%20más!" class="icon-whatsapp" target="blank"></a>
-            <a href="#" class="icon-blind"></a>
+            <a href="#programas" class="icon-blind"></a>
             <a href="#inicio" class="icon-home"></a>
         </div>
         <div class="btn-mas">
             <label for="btn-mas" class="fa fa-plus"></label>
         </div>
     </div>
-    <!-- Navigation -->
-    <!-- SHOWCASE -->
+    <!-- Imágenes Inicio-->
     <div class="showcase">
       <a href="https://api.whatsapp.com/send?phone=+5492995016050&text=Hola,%20queria%20saber%20más!" class="btn" target="blank">Contáctanos <i class="fas fa-chevron-right"></i>
       </a>
     </div>
 
-    <!-- NEWS CARDS -->
+    <!-- Nuevas Imágenes -->
     <div class="news-cards">
       <div>
         <img src="img/news1.jpg" alt="" />
@@ -81,18 +80,17 @@
       </div>
     </div>
 
-    <!-- Card Banner 1-->
-    <section class="cards-banner-one">
+    <!-- Banner Programas-->
+    <section class="cards-banner-one" id="programas">
       <div class="content">
         <h2>Lorem, ipsum dolor.</h2>
-        <!-- lorem 20 -->
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat maxime facilis quasi alias illo, fugiat
           cupiditate porro dolores tenetur delectus!</p>
         <a href="#" class="btn">Learn More<i class="fas fa-chevron-right"></i></a>
       </div>
     </section>
 
-    <!-- NEWS CARDS -->
+    <!-- Imágenes Programas -->
     <div class="news-cards">
       <div>
         <img src="img/body_combat.jpg" alt="" />
@@ -125,7 +123,8 @@
       </div>
     </div>
 
-    <div class="inf_nosotros">
+    <!--Información Nosotros-->>
+    <div class="inf_nosotros" id="inf_nosotros_header">
       <div>
         <h1>Nosotros:</h1>
       </div>
@@ -136,16 +135,23 @@
           Lorem ipsum dolor sit amet consectetur adipiscing elit platea, turpis aliquet ullamcorper lobortis pulvinar dignissim rutrum, duis posuere feugiat mauris erat per quis. Dis sagittis cras mus suspendisse pretium turpis hendrerit eget bibendum euismod, quis ante facilisis at habitant porta varius iaculis phasellus volutpat mollis, parturient dictumst felis tristique et proin arcu feugiat eros. Fringilla porttitor non cum taciti eu pulvinar faucibus dictumst, facilisis massa ante potenti sed varius morbi euismod, justo cursus conubia rhoncus velit arcu diam.
         
         </p>
-        <div class="slider">
-          <ul>
-            <li>
-              <img src="img/precios2.jpg"/>
-            </li>
-            <li>
-              <img src="img/horarios.jpg"/>
-            </li>
-          </ul>
-        </div>
+        <ul class="slider">
+          <li id="slider1">
+            <img src="img/precios2.jpg"/>
+          </li>
+          <li id="slider2">
+            <img src="img/horarios.jpg"/>
+          </li>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <a href="#slider1" class="icon-circle"></a>
+          </li>
+          <li>
+            <a href="#slider2" class="icon-circle"></a>
+          </li>
+        </ul>
         <p>
           Libero imperdiet arcu eleifend suspendisse nascetur ante ultricies, consequat proin mattis rhoncus ornare sagittis a ac, in luctus malesuada egestas ridiculus lacinia. Nullam integer libero netus suspendisse augue lobortis montes cum sollicitudin tempor habitasse, erat iaculis ligula sed euismod natoque vitae ridiculus nisi feugiat, primis venenatis sodales aenean phasellus imperdiet taciti orci dis porta. Cras fringilla varius ac eros accumsan non, magnis sociis phasellus semper erat.
         </p>
@@ -153,16 +159,8 @@
 
     </div>
 
-    <!-- third card -->
-    <section class="cards-banner-two">
-      <div class="content">
-        <h2>Lorem, ipsum dolor.</h2>
-        <!-- lorem 30 -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui laudantium id quam magni accusantium,
-          veritatis, ipsam labore, reprehenderit dolore repudiandae nemo sint deserunt! Suscipit facilis qui inventore
-          consequatur fugit.</p>
-      </div>
-    </section>
+    <!-- Último Banner -->
+    <section class="cards-banner-two"></section>
    
   </div>
 
@@ -211,7 +209,7 @@
   </div>
   </footer>
 
-  <!-- Scroll Reveal -->
+  <!-- JS -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./js/main.js"></script>
 </body>
