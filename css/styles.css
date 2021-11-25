@@ -239,7 +239,9 @@ button:hover {
   .inf_nosotros{
     flex-direction: column;
     justify-content: center;
+    display: flex;
   }
+
   .inf_nosotros h1{
     text-align: center;
   }
@@ -251,6 +253,7 @@ button:hover {
     width: 500px;
     display: block;
     margin: auto;
+    padding-bottom: 30px;
   }
 
   /* CARDS BANNER TWO*/
@@ -385,6 +388,10 @@ button:hover {
   
     .footer-links .footer-container {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .inf_nosotros img{
+      width: 80%;
+      height: 80%;
     }
   }
   
