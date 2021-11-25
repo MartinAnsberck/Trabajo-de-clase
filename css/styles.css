@@ -236,6 +236,23 @@ button:hover {
     margin: 10px 0 20px 0;
   }
   
+  .inf_nosotros{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .inf_nosotros h1{
+    text-align: center;
+  }
+  .inf_nosotros p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .cont_nosotros img{
+    width: 500px;
+    display: block;
+    margin: auto;
+  }
+
   /* CARDS BANNER TWO*/
   .cards-banner-two {
     width: 100%;
