@@ -425,8 +425,7 @@ button:hover {
       grid-template-columns: repeat(2, 1fr);
     }
   
-    .cards-banner-one .content,
-    .cards-banner-two .content {
+    .cards-banner-one .content {
       width: 80%;
     }
   
@@ -441,8 +440,7 @@ button:hover {
   
   @media (max-width: 1000px){
     .cards-banner-two{
-      width: auto;
-      height: auto;
+      display: flex;
     }
   }
   @media (max-width: 500px) {
