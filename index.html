@@ -51,14 +51,14 @@
     <!-- Nuevas Imágenes -->
     <div class="news-cards">
       <div>
-        <img src="img/news1.jpg" alt="" />
+        <img src="img/vista1.jpg" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
         </p>
       </div>
       <div>
-        <img src="img/news2.jpg" alt="" />
+        <img src="img/vista5.jpg" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
@@ -81,45 +81,30 @@
     </div>
 
     <!-- Banner Programas-->
-    <section class="cards-banner-one" id="programas">
-      <div class="content">
-        <h2>Lorem, ipsum dolor.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat maxime facilis quasi alias illo, fugiat
-          cupiditate porro dolores tenetur delectus!</p>
-        <a href="#" class="btn">Learn More<i class="fas fa-chevron-right"></i></a>
-      </div>
-    </section>
+    <section class="cards-banner-one" id="programas"></section>
 
     <!-- Imágenes Programas -->
     <div class="news-cards">
       <div>
         <img src="img/body_combat.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
+        <h3>Body Combat</h3>
+        <p>BodyCombat es un programa de entrenamiento grupal de tipo cardiovascular que consiste en realizar movimientos basados en distintas artes marciales siguiendo el ritmo de una base musical.</p>
       </div>
       <div>
-        <img src="img/spinning.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
+        <img src="img/spinning1.jpg" alt="" />
+        <h3>Spinning</h3>
+        <p>Se trata de un ejercicio físico colectivo, el cual se realiza sobre una bicicleta estática al ritmo de la música, en la que se efectúa un trabajo cardiovascular de alta intensidad con intervención muy elevada de los grandes grupos musculares del tren inferior.</p>
       </div>
       <div>
         <img src="img/funcional.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
+        <h3>Funcional</h3>
+        <p>El entrenamiento funcional se basa en realizar ejercicios que se adaptan a los movimientos naturales del cuerpo humano para trabajar de forma global músculos y articulaciones.</p>
 
       </div>
       <div>
         <img src="img/body_pump.jpg" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
-          doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
-        </p>
+        <h3>Body Pump</h3>
+        <p>Las clases de Body Pump consisten en unos 55 minutos de entrenamiento (puede haber clases más cortas o exprés de 30 minutos de duración, y otras de 45 minutos) en los que trabajamos con pesos libres, utilizando barras y discos, para entrenar todos los grupos musculares de nuestro cuerpo.</p>
       </div>
     </div>
 
@@ -135,23 +120,26 @@
           Lorem ipsum dolor sit amet consectetur adipiscing elit platea, turpis aliquet ullamcorper lobortis pulvinar dignissim rutrum, duis posuere feugiat mauris erat per quis. Dis sagittis cras mus suspendisse pretium turpis hendrerit eget bibendum euismod, quis ante facilisis at habitant porta varius iaculis phasellus volutpat mollis, parturient dictumst felis tristique et proin arcu feugiat eros. Fringilla porttitor non cum taciti eu pulvinar faucibus dictumst, facilisis massa ante potenti sed varius morbi euismod, justo cursus conubia rhoncus velit arcu diam.
         
         </p>
-        <ul class="slider">
-          <li id="slider1">
-            <img src="img/precios2.jpg"/>
-          </li>
-          <li id="slider2">
-            <img src="img/horarios.jpg"/>
-          </li>
-        </ul>
-
-        <ul class="menu">
-          <li>
-            <a href="#slider1" class="icon-circle"></a>
-          </li>
-          <li>
-            <a href="#slider2" class="icon-circle"></a>
-          </li>
-        </ul>
+        <div class="slide-contenedor" id="slider">
+          <div class="miSlider fade">
+              <img src="img/horarios.jpg" alt="">
+          </div>
+          <div class="miSlider fade">
+              <img src="img/precios2.jpg" alt="">
+          </div>
+          <div class="miSlider fade">
+              <img src="img/delta123.jpg" alt="">
+          </div>
+          <div class="direcciones">
+              <a href="#slider" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+              <a href="#slider" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+          </div>
+          <div class="barras">
+              <span class="barra active" onclick="posicionSlide(1)"></span>
+              <span class="barra" onclick="posicionSlide(2)"></span>
+              <span class="barra" onclick="posicionSlide(3)"></span>
+          </div>
+        </div>
         <p>
           Libero imperdiet arcu eleifend suspendisse nascetur ante ultricies, consequat proin mattis rhoncus ornare sagittis a ac, in luctus malesuada egestas ridiculus lacinia. Nullam integer libero netus suspendisse augue lobortis montes cum sollicitudin tempor habitasse, erat iaculis ligula sed euismod natoque vitae ridiculus nisi feugiat, primis venenatis sodales aenean phasellus imperdiet taciti orci dis porta. Cras fringilla varius ac eros accumsan non, magnis sociis phasellus semper erat.
         </p>
