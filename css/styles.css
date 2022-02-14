@@ -149,8 +149,7 @@ button:hover {
   background-color: rgba(255, 38, 38, 0.5);
 }
   
-  /* SHOWCASE */
-  
+ 
   .btn {
     cursor: pointer;
     display: inline-block;
@@ -167,7 +166,8 @@ button:hover {
     opacity: 0.9;
   }
   
-  .showcase {
+   /* Imágenes de muestra */
+  .img_muestra {
     width: 100%;
     height: 550px;
     background: url("../img/gim2.jpg") no-repeat center center/cover;
@@ -181,34 +181,34 @@ button:hover {
     color: #000000;
   }
   
-  .showcase h2,
-  .showcase p {
+  .img_muestra h2,
+  .img_muestra p {
     margin-bottom: 10px;
   }
   
-  .showcase .btn {
+  .img_muestra .btn {
     margin-top: 20px;
   }
   
-  /* News Cards */
-  .news-cards {
+  /* Relleno */
+  .relleno {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin: 70px 0;
   }
   
-  .news-cards img {
+  .relleno img {
     width: 100%;
     height: 250px;
   }
   
-  .news-cards h3 {
+  .relleno h3 {
     font-size: 20px;
     margin: 10px 0;
   }
   
-  .news-cards a {
+  .relleno a {
     padding: 10px 0;
     color: #f2f2f2;
     text-transform: uppercase;
@@ -216,29 +216,20 @@ button:hover {
     font-weight: bold;
   }
   @media (max-width: 1366px){
-    .news-cards img{
+    .relleno img{
       height: 300px;
     }
 
   }
   
-  /* CARDS BANNER ONE */
-  .cards-banner-one {
+  /* Banner de programas */
+  .banner_prog {
     width: 100%;
     height: 350px;
     background: url("../img/banner2.jpg") center;
     margin-bottom: 40px;
   }
-  
-  .cards-banner-one .content {
-    width: 40%;
-    padding: 90px 0 0 30px;
-    color: #fff;
-  }
-  
-  .cards-banner-one p {
-    margin: 10px 0 20px 0;
-  }
+
   
 
   .inf_nosotros h1{
@@ -250,60 +241,7 @@ button:hover {
   }
 
   /*Slider*/
-  .slider{
-    display: block;
-    margin: auto;
-  }
-  .slider ul, li{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  ul.slider {
-    position: relative;
-    width: 800px;
-    height: 500px;
-  }
-  ul.slider li{
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-  }
-  ul.menu li a{
-    color: none;
-  }
-  ul.slider li img{
-    width: 500px;
-    height: 100%;
-    object-fit: cover;
-    margin-left: 150px;
-  }
-  ul.slider li:first-child{
-    opacity: 1;
-  }
-  ul.slider li:target{
-    opacity: 1;
-  }
 
-  .menu{
-    text-align: center;
-    margin: 20px;
-  }
-  .menu li{
-    display: inline-block;
-    text-align: center;
-  }
-  .menu li a{
-    display: inline-block;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    color: #000000;
-  }
 
 
   /* CARDS BANNER TWO*/
@@ -427,11 +365,11 @@ button:hover {
       margin-right: 50px;
     }
   
-    .news-cards {
+    .relleno {
       grid-template-columns: repeat(2, 1fr);
     }
   
-    .cards-banner-one .content {
+    .banner_prog .content {
       width: 80%;
     }
   
@@ -445,14 +383,14 @@ button:hover {
   }
   
   @media (max-width:1500px){
-    .news-cards{
+    .relleno{
       grid-template-columns: repeat(2,1fr);
     }
     .container{
       padding-left: 100px;
       padding-right: 100px;
     }
-    .news-cards img{
+    .relleno img{
       height: 400px;
     }
 
@@ -474,16 +412,16 @@ button:hover {
     .news-cards{
       grid-template-columns: 1fr;
     }
-    .news-cards img{
+    .relleno img{
       height: auto;
     }
   }
   @media (max-width: 500px) {
-    .news-cards {
+    .relleno {
       grid-template-columns: 1fr;
     }
   
-    .cards-banner-one .content,
+    .banner_prog .content,
     .cards-banner-two .content {
       width: 100%;
       padding: 60px 20px;
@@ -502,13 +440,6 @@ button:hover {
     }
     
   }
-  @media screen and (max-width:700px){
-    ul.slider li img{
-      width: 450px;
-      height: 100%;
-      margin-left: 0px;
-    }
-  }
   .slide-contenedor{
     max-width:100%;
     max-height: 100vh;
@@ -525,12 +456,6 @@ button:hover {
   }
 
 }
-
-/* .miSlider{
-    display: none;
-    transition: 2s;
-    max-height: 100vh;
-} */
 
 .miSlider img{
     width: 100%;
