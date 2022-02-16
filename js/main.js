@@ -35,8 +35,8 @@ function muestraSlides(n){
 }
   
   ScrollReveal().reveal('.showcase');
-  ScrollReveal().reveal('.news-cards', { delay: 500 });
-  ScrollReveal().reveal('.cards-banner-one', { delay: 500 });
+  ScrollReveal().reveal('.relleno', { delay: 500 });
+  ScrollReveal().reveal('.banner_prog', { delay: 500 });
   ScrollReveal().reveal('.inf_nosotros', { delay: 500 });
-  ScrollReveal().reveal('.cards-banner-two', { delay: 500 });
+  ScrollReveal().reveal('.banner_final', { delay: 500 });
   
